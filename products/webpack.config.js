@@ -12,10 +12,13 @@ module.exports = {
             filename: 'remoteEntry',
             exposes: {
                 './ProductIndex': './src/index'
-            }
+            },
+            shared: [
+                '@faker-js/faker'
+            ]
         }),
         new htmlWebpackPlugin({
             template: './public/index.html'
         })
-    ]
+    ],
 }
