@@ -1,4 +1,5 @@
-import { mount } from 'products/ProductIndex'
-import 'carts/CartShow'
+import { mount as productIndex } from 'products/ProductIndex'
+import { mount as cartShow } from 'carts/CartShow'
 
-mount(document.querySelector("#product-list"))
+productIndex(document.querySelector("#product-list"))
+cartShow(document.querySelector("#cart-list"))

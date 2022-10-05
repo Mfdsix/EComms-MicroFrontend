@@ -1,13 +1,13 @@
 import { faker } from '@faker-js/faker'
 
-let products =  '';
+let content =  '';
 for(let i = 0; i < 5; i++){
     const name = faker.commerce.productName()
-    products += `<div>${name}</div>`
+    content += `<div>${name}</div>`
 }
 
 const mount = (el) => {
-    el.innerHTML = products;
+    el.innerHTML = content;
 }
 
 if(process.env.NODE_ENV === 'development'){
